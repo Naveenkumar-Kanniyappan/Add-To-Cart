@@ -1,0 +1,128 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #6a11cb, #2575fc);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+  width: 50%;
+  max-width: 800px;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 2em;
+  color: #fff;
+}
+
+.shopping-cart {
+  display: flex;
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #333;
+}
+
+.input-form,
+.cart {
+  width: 50%;
+  padding: 20px;
+}
+
+.input-form {
+  border-right: 1px solid #ddd;
+}
+
+.input-form label {
+  text-align: start;
+  padding: 20px 5px;
+  display: block;
+  font-weight: bold;
+  color: #555; 
+}
+
+.input-form input {
+  width: 90%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  font-size: 1em;
+}
+
+#add-to-cart {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: #fff;
+  border: none;
+  width: 100%;
+  padding: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 20px;
+}
+
+#add-to-cart:hover {
+  background: linear-gradient(to right, #5a0fb9, #1d63e0);
+}
+
+.cart ul {
+  height: 200px; 
+  overflow: auto; 
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart ul li {
+  text-align: center;
+  padding: 8px 0;
+  font-weight: bold;
+  color: #333;
+}
+
+.cart-items-heading{
+  display: flex;
+  margin: 5px 5px;
+  justify-content: space-around;
+  border-bottom: 1px solid #ccc;
+}
+.cart-items-heading h3{
+  margin: 5px 5px;
+  text-align: center;
+}
+.fa-solid, .fas {
+  padding: 0px 5px;
+}
+#cart-items li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  font-size: 0.9em;
+}
+
+.cart .total {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+#total-amount {
+  color: #2575fc;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="container">
+    <h1>Shopping Cart</h1>
+    <div class="shopping-cart">
+      <div class="input-form">
+        <label for="product-name">Product Name</label>
+        <input type="text" id="product-name" placeholder="Product name" />
+        <label for="amount">Amount</label>
+        <input type="number" id="amount" placeholder="Amount" />
+        <button id="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="cart">
+        <div class="cart-items-heading">
+          <h3>Product name</h3>
+          <h3>Amount <i class="fa-solid fa-caret-up"></i> </h3>
+      </div>
+        <ul id="cart-items"></ul>
+        <div class="total">
+          <span>Total Amount:</span>
+          <span id="total-amount">0</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
